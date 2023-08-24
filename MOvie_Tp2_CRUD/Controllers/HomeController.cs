@@ -34,7 +34,26 @@ namespace TP2.Controllers
             ViewBag.Title = _localizer["PrivacyTitle"];
             return View();
         }
+        public IActionResult Dashboard()
+        {
 
+            return View();
+        }
+        public IActionResult Financial()
+        {
+
+            return View();
+        }
+        public IActionResult LeaderObjective()
+        {
+
+            return View();
+        }
+        public IActionResult Employes()
+        {
+            return View();
+
+        }
 
         public IActionResult Consulter(int id)
         {

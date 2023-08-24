@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> @ViewData["titre"] </title>
+    <title> @ViewData["titre"]</title>
 
 
 
@@ -58,18 +58,25 @@
                 <ul class="navbar-nav">
                     <li class="text-uppercase">
                         <a class="navbar-item  text-decoration-none" href="~/Enfant/Recherche">
-                            Recherche
+                            @Locals["Search"]
                         </a>
                     </li>
                     <li class="text-uppercase">
 
                         <a class="navbar-item  text-decoration-none" href="~/Favoris/Index">
-                            Favourite
+                            @Locals["Favourite"]
+                        </a>
+                    </li>
+                    <li class="text-uppercase">
+
+                        <a class="navbar-item  text-decoration-none" href="~/Home/Dashboard">
+                            @Locals["Dashboard"]
                         </a>
                     </li>
                     <li class="text-uppercase">
                         <a class="navbar-item  text-decoration-none" href="#footer">
-                            Contact
+                            @Locals["Contact"]
+
 
                         </a>
                     </li>
@@ -93,9 +100,19 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div id="menu-burger" style="display: none">
-                <a target="_self" href="~/Enfant/Recherche" class="burger-item">RECHERCHE</a>
-                <a target="_self" href="~/Favoris/Index" class="burger-item">FAVORIS</a>
-                <a target="_self" href="#footer" class="burger-item">CONTACT</a>
+                <a target="_self" href="~/Enfant/Recherche" class="burger-item">
+                    @Locals["Search"]
+                </a>
+                <a target="_self" href="~/Favoris/Index" class="burger-item">
+                    @Locals["Favourite"]
+                </a>
+                <a target="_self" href="~/Home/Dashboard" class="burger-item">
+                    @Locals["Dashboard"]
+                </a>
+              
+                <a target="_self" href="#footer" class="burger-item">
+                    @Locals["Contact"]
+                </a>
                 @*<a target="_self" href="~/Home/AjouterUnFilm" class="burger-item">+ Ajouter un film</a>*@
             </div>
         </nav>
@@ -122,13 +139,19 @@
         <div class="container">
             <div class="footer_top wow animate__animated animate__fadeInUp animated" style="visibility: visible; animation-name: fadeInUp">
                 <div class="footer_text">
-                    <h2>Abonnez-vous à nos nouveaux films</h2>
+                    <h2>
+                        @Locals["Subscrire"]
+
+
+                    </h2>
                 </div>
                 <div class="footer_form">
                     <form>
-                        <input type="text" placeholder="Votre Email Addresse">
+                        @Locals["Send"]
+                        <input type="text" placeholder=" @Locals["YourEmailAddress"]">
                         <button class="btn_main">
-                            Envoie
+                            @Locals["Send"]
+
                         </button>
                     </form>
                 </div>
@@ -139,17 +162,26 @@
             <div class="row footer_bottom">
                 <div class="footer_bottom_up">
                     <div class="col-4 contact_footer footer_right footer_item">
-                        <h3>CONTACT</h3>
+                        <h3>
+                            @Locals["Contact"]
+                        </h3>
                         <ul class="footer_contact">
                             <li><i class="fa-regular fa-envelope"></i><span>abc@gmail.com</span></li>
                             <li> <i class="fa-solid fa-phone"></i> <span>(438) 123 4567</span></li>
-                            <li> <i class="fa-solid fa-location-dot"></i> <span>Adresse: 1234 Chambly, J3Y 1H6.</span></li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i> <span>
+                                    @Locals["Address"]
+                                    : 1234 Chambly, J3Y 1H6.
+                                </span>
+                            </li>
                         </ul>
 
                     </div>
 
                     <div class="footer_links col-4 footer_item wow animate__animated animate__fadeIn animate__delay-1s animated" style="visibility: visible; animation-name: fadeIn">
-                        <h3>NOS LIENS</h3>
+                        <h3>
+                            @Locals["Link"]
+                        </h3>
                         <ul class="footer_contact">
                             <li class="footer_li">
                                 <i class="fa fa-angle-right"></i>
@@ -157,7 +189,8 @@
                             </li>
                             <li class="footer_li">
                                 <i class="fa fa-angle-right"></i>
-                                À propos
+                                @Locals["About"]
+
                             </li>
                             <li class="footer_li">
                                 <i class="fa fa-angle-right"></i>
@@ -180,11 +213,15 @@
                 <div class="footer_bottom_down">
 
                     <div class="footer_copyright">
-                        Copyright © 2022
+                        @Locals["Copyright"]
+                        © 2022
                         <span>ABCXYZ</span>
-                        . Tous les droits sont réservés.
+                        .                         @Locals["Allrightsreserved"]
+
                         <button class="btn btn-light">
-                            <a asp-controller="Home" asp-action="Privacy">Confidentialité</a>
+                            <a asp-controller="Home" asp-action="Privacy">
+                                @Locals["Confidentiality"]
+                            </a>
                         </button>
                     </div>
 
