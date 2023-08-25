@@ -11,14 +11,22 @@ namespace TP2.Controllers
 
         private TPDbContext _baseDonnees { get; set; }
         private readonly IStringLocalizer<HomeController> _localizer;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(TPDbContext donnees, IStringLocalizer<HomeController> localizer)
+
+        public HomeController(TPDbContext donnees, IStringLocalizer<HomeController> localizer, ILogger<HomeController> logger)
         {
             _baseDonnees = donnees;
             _localizer = localizer;
+            _logger = logger;
 
         }
 
+        public void OnGet()
+        {
+            _logger.LogInformation("About page visited at {DT}",
+                DateTime.UtcNow.ToLongTimeString());
+        }
         [Route("")]
         [Route("home/index")]
         [Route("index")]

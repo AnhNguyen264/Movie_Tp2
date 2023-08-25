@@ -3269,3 +3269,7 @@ C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\obj\Debug\
 C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\obj\Debug\net6.0\TP2.pdb
 C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\obj\Debug\net6.0\TP2.genruntimeconfig.cache
 C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\obj\Debug\net6.0\ref\TP2.dll
+C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
