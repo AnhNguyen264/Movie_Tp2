@@ -23,11 +23,11 @@ namespace TP2.Models
 
         public string Description { get; set; }
         //public List<ParentEnfant> ParentEnfant { get; set; }
-        //public Parent()
-        //{
-        //    Enfants = new List<Enfant>();
-        //}
-        public List<Enfant> Enfants { get; set; }
+        public Parent()
+        {
+            Enfants = new List<Enfant>();
+        }
+        public List<Enfant>? Enfants { get; set; }
 
 
 

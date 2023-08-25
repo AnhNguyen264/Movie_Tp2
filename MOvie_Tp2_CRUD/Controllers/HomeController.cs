@@ -24,7 +24,7 @@ namespace TP2.Controllers
 
         public void OnGet()
         {
-            _logger.LogInformation("About page visited at {DT}",
+            _logger.LogInformation("About page visited at {DT}" ,
                 DateTime.UtcNow.ToLongTimeString());
         }
         [Route("")]
