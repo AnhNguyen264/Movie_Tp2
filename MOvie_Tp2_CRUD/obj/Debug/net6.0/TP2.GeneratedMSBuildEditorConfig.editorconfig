@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TP2
+build_property.RootNamespace = TP2
+build_property.ProjectDir = C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Ete 2023\Prg transactionnelle\lam lai tp2\Movie_Tp2\MOvie_Tp2_CRUD
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Enfant/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mYW50XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Enfant/Recherche.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mYW50XFJlY2hlcmNoZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Enfant/_EnfantPartiel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mYW50XF9FbmZhbnRQYXJ0aWVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Favoris/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3Jpc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/GestionEnfant/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkVuZmFudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/GestionEnfant/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkVuZmFudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/GestionEnfant/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkVuZmFudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/Consulter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25zdWx0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/Employes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbXBsb3llcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/Financial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaW5hbmNpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/LeaderObjective.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMZWFkZXJPYmplY3RpdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Parents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Parents/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Parents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Parents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Parents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Parents/_EnfantPartiel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xfRW5mYW50UGFydGllbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/NonTrouve.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vblRyb3V2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_bannerPartiel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9iYW5uZXJQYXJ0aWVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_navDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXZEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_script_dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9zY3JpcHRfZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_SelectLanguage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWxlY3RMYW5ndWFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_style_dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9zdHlsZV9kYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_UpsertButtons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VcHNlcnRCdXR0b25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Ete 2023/Prg transactionnelle/lam lai tp2/Movie_Tp2/MOvie_Tp2_CRUD/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

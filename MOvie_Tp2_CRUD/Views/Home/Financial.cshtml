@@ -1,0 +1,206 @@
+﻿@section style {
+    @{
+        await Html.RenderPartialAsync("_style_dashboard");
+    }
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+}
+
+<div class="main_body">
+    <div class="row">
+        <div class="col-2">
+
+            <partial name="_navDashBoard" />
+
+        </div>
+
+        <div class="col-10">
+            <div class="header">
+
+                <div class="header-left">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-right">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="">
+                <h2>
+                </h2>
+            </div>
+            <div class="main-financer">
+                <h2> @Locals["Financialreports"]</h2>
+                <div class="box shadow mt-4">
+                    <div id="line-adwords" class=""></div>
+                </div>
+            </div>
+
+            <div class="table-sta">
+
+                
+                <table id="financialTable">
+                    <tr>
+                        <th>   @Locals["Month"]</th>
+                        <th>  @Locals["Revenue"]</th>
+                        <th>  @Locals["Expenses"]</th>
+                        <th>  @Locals["Profit"]</th>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+ 
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_script_dashboard");
+    }
+    <script>
+        //financier
+        window.Apex = {
+            chart: {
+                foreColor: '#ccc',
+                toolbar: {
+                    show: false
+                },
+            },
+            stroke: {
+                width: 3
+            },
+            dataLabels: {
+                enabled: false
+            },
+            tooltip: {
+                theme: 'dark'
+            },
+            grid: {
+                borderColor: "#535A6C",
+                xaxis: {
+                    lines: {
+                        show: true
+                    }
+                }
+            }
+        };
+
+        var optionsLine = {
+            chart: {
+                height: 328,
+                type: 'line',
+                zoom: {
+                    enabled: false
+                },
+                dropShadow: {
+                    enabled: true,
+                    top: 3,
+                    left: 2,
+                    blur: 4,
+                    opacity: 1,
+                }
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 2
+            },
+
+            series: [{
+                name: "Forecast",
+                data: [26000, 35000, 33000, 27000, 35000, 28000]
+            },
+
+            {
+                name: "Réel",
+                data: [25000, 30000, 40000, 25000, 37000, 33000]
+            }
+            ],
+            title: {
+                text: 'Rapport de bénéfice  pour les six premiers mois de 2023',
+                align: 'left',
+                offsetY: 25,
+                offsetX: 20
+            },
+            subtitle: {
+                text: 'Forecast - Réel',
+                offsetY: 55,
+                offsetX: 20
+            },
+            markers: {
+                size: 6,
+                strokeWidth: 0,
+                hover: {
+                    size: 9
+                }
+            },
+            grid: {
+                show: true,
+                padding: {
+                    bottom: 0
+                }
+            },
+            labels: ['Janvier', 'Févirer', 'Mars', 'Avril', 'Mai', 'Juin'],
+            xaxis: {
+                tooltip: {
+                    enabled: false
+                }
+            },
+            legend: {
+                position: 'top',
+                horizontalAlign: 'right',
+                offsetY: -20
+            }
+        }
+
+        var chartLine = new ApexCharts(document.querySelector('#line-adwords'), optionsLine);
+        chartLine.render();
+
+
+    </script>
+
+    <script>
+
+       
+        const financialData = [
+            { date: 1, revenue: 36000, expenses: 11000 },
+            { date: 2, revenue: 45000, expenses: 15000 },
+            { date: 3, revenue: 52000, expenses: 12000 },
+            { date: 4, revenue: 30000, expenses: 5000 },
+                    { date: 5, revenue: 40000, expenses: 3000 },
+                    { date: 6, revenue: 40000, expenses: 7000 }
+            // Add more data here
+        ];
+
+        const table = document.getElementById('financialTable');
+
+        financialData.forEach(data => {
+            const row = table.insertRow();
+            const dateCell = row.insertCell(0);
+            const revenueCell = row.insertCell(1);
+            const expensesCell = row.insertCell(2);
+            const profitCell = row.insertCell(3);
+
+            dateCell.textContent = data.date;
+            revenueCell.textContent = data.revenue;
+            expensesCell.textContent = data.expenses;
+            profitCell.textContent = data.revenue - data.expenses;
+        });
+    </script>
+}

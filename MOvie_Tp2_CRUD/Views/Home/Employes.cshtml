@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Objectives>
+
+@section style {
+    @{
+        await Html.RenderPartialAsync("_style_dashboard");
+    }
+    <style>
+
+    </style>
+}
+<div class="main_body">
+    <div class="row">
+        <div class="col-2">
+
+            <partial name="_navDashBoard" />
+
+        </div>
+
+        <div class="col-10">
+            <div class="header">
+
+                <div class="header-left">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-right">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="main_content">
+                <h2>Objectives de vendeur</h2>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Objective</th>
+                            <th>Films</th>
+                            <th>statu</th>
+                            <th>Vendeurs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vente 1</td>
+                            <td>150</td>
+                            <td>Terminé</td>
+                            <td>Bon</td>
+                        </tr>
+                        <tr>
+                            <td>Vente 2</td>
+                            <td>150</td>
+                            <td>Terminé</td>
+                            <td>Bon</td>
+                        </tr>
+                        <tr>
+                            <td>Vente 3</td>
+                            <td>150</td>
+                            <td>Terminé</td>
+                            <td>Bon</td>
+                        </tr>
+                        <tr>
+                            <td>Vente 4</td>
+                            <td>150</td>
+                            <td>terTerminémine</td>
+                            <td>Bon</td>
+                        </tr>
+                    </tbody>
+
+
+                   
+                </table>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_script_dashboard");
+    }
+    <script>
+
+
+    </script>
+}
