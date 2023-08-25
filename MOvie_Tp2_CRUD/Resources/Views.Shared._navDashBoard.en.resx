@@ -117,31 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackToList" xml:space="preserve">
+    <value>Back To List</value>
+  </data>
   <data name="best-selling" xml:space="preserve">
-    <value>Films les plus vendus</value>
+    <value>Best-Selling Movies</value>
   </data>
   <data name="Cost" xml:space="preserve">
-    <value>Coût</value>
-  </data>
-  <data name="CostsandRevenues" xml:space="preserve">
-    <value>Coûts et revenus</value>
+    <value>Cost</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
-    <value>Tableau de bord</value>
+    <value>Dashboard</value>
   </data>
   <data name="Films" xml:space="preserve">
-    <value>Films</value>
+    <value>Movies</value>
   </data>
-  <data name="NbMovie" xml:space="preserve">
-    <value>Nombre des films</value>
+  <data name="Leader" xml:space="preserve">
+    <value>The team leaders</value>
+  </data>
+  <data name="Repport" xml:space="preserve">
+    <value>Repports</value>
   </data>
   <data name="Revenue" xml:space="preserve">
-    <value>Revenus</value>
+    <value>Revenue</value>
   </data>
   <data name="Sale" xml:space="preserve">
-    <value>Ventes</value>
+    <value>Sales</value>
   </data>
-  <data name="TotalSale" xml:space="preserve">
-    <value>Total ventes en Q1 de 2023</value>
+  <data name="Sellers" xml:space="preserve">
+    <value>Sellers</value>
   </data>
 </root>

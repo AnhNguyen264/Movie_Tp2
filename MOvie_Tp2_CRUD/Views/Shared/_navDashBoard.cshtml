@@ -1,0 +1,52 @@
+﻿
+
+<aside class="sidebar">
+    <div class="sidebar-title">
+        <div class="sidebar-brand">
+            @Locals["Repport"]
+        </div>
+
+    </div>
+
+    <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+            <a asp-controller="home" asp-action="Dashboard" target="_blank">
+                @Locals["Dashboard"]
+            </a>
+        </li>
+        <li class="sidebar-list-item">
+            <a asp-controller="home" asp-action="Financial" target="_blank">
+                @Locals["Repport"]
+            </a>
+        </li>
+        <li class="sidebar-list-item">
+            <a asp-controller="home" asp-action="LeaderObjective" target="_blank">
+                @Locals["Leader"]
+            </a>
+        </li>
+        <li class="sidebar-list-item">
+            <a asp-controller="home" asp-action="Employes" target="_blank">
+                @Locals["Sellers"]
+            </a>
+        </li>
+
+        <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+                @Locals["Cost"]
+            </a>
+        </li>
+        <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+                @Locals["Ventes"]
+            </a>
+        </li>
+        <li class="sidebar-list-item">
+            <a asp-controller="home" asp-action="index" target="_blank">
+                <i class="fa-solid fa-arrow-left"></i>
+                @Locals["BackToList"]
+            </a>
+        </li>
+    </ul>
+
+
+</aside>

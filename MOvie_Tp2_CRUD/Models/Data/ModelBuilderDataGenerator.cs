@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using TP2.Models;
@@ -37,6 +38,24 @@ namespace TP2.Models.Data
             new Parent { Id = 3, Nom = "LES PLUS VUS", ImageURL = "/Image/parent plus vus.jpeg", Description = "Le loremuite de mots sans  utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page." }
 
                 );
+
+            builder.Entity<Vendeur>().HasData(
+
+             new Vendeur { Id = 1, NomVendeur = "VWilliam" },
+             new Vendeur {Id = 2, NomVendeur = "VLeo" },
+             new Vendeur {Id = 3, NomVendeur = "VLiam" },
+             new Vendeur {Id = 4, NomVendeur = "VThomas" },
+             new Vendeur {Id = 5, NomVendeur = "VLouis" },
+             new Vendeur {Id = 6, NomVendeur = "VArthur" }
+
+           );
+            builder.Entity<Objectives>().HasData(
+
+          new Objectives { Id = 1, NomObjective = "Ventes les films nouveaux " },
+          new Objectives { Id = 2, NomObjective = "Ventes les films à venir " },
+          new Objectives { Id = 3, NomObjective = "Ventes les films plus vus " }
+
+        );
         }
 
     }

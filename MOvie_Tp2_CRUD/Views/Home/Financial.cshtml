@@ -3,7 +3,16 @@
         await Html.RenderPartialAsync("_style_dashboard");
     }
     <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
 
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
     </style>
 }
 
@@ -11,57 +20,8 @@
     <div class="row">
         <div class="col-2">
 
-            <aside class="sidebar">
-                <div class="sidebar-title">
-                    <div class="sidebar-brand">
-                        Rapport - Admin
-                    </div>
+            <partial name="_navDashBoard" />
 
-                </div>
-
-                <ul class="sidebar-list">
-                    <li class="sidebar-list-item">
-                        <a asp-controller="home" asp-action="Dashboard" target="_blank">
-                            Tableau de bord
-                        </a>
-                    </li>
-                    <li class="sidebar-list-item">
-                        <a asp-controller="home" asp-action="Financial" target="_blank">
-                            Rapports
-                        </a>
-                    </li>
-                    <li class="sidebar-list-item">
-                        <a asp-controller="home" asp-action="LeaderObjective" target="_blank">
-                            Les chefs d'équipe
-                        </a>
-                    </li>
-                    <li class="sidebar-list-item">
-                        <a asp-controller="home" asp-action="Employes" target="_blank">
-                            Les vendeurs
-                        </a>
-                    </li>
-
-                    <li class="sidebar-list-item">
-                        <a href="#" target="_blank">
-                            Couts
-                        </a>
-                    </li>
-                    <li class="sidebar-list-item">
-                        <a href="#" target="_blank">
-                            Ventes
-                        </a>
-                    </li>
-                    <li class="sidebar-list-item">
-                        <a asp-controller="home" asp-action="index" target="_blank">
-                            <i class="fa-solid fa-arrow-left"></i>
-                            Retour à l'acceuil
-                        </a>
-                    </li>
-                </ul>
-
-
-
-            </aside>
         </div>
 
         <div class="col-10">
@@ -83,7 +43,7 @@
                 </h2>
             </div>
             <div class="main-financer">
-                <h2>Rapports de financiers</h2>
+                <h2> @Locals["Financialreports"]</h2>
                 <div class="box shadow mt-4">
                     <div id="line-adwords" class=""></div>
                 </div>
@@ -91,84 +51,16 @@
 
             <div class="table-sta">
 
-                <table style="width:100%">
-                    <tr class="month">
-                        <th></th>
-
-                        <th colspan="2">Janvier</th>
-                        <th colspan="2">Février</th>
-                        <th colspan="2">Mars</th>
-                        <th colspan="2">Avril</th>
-                        <th colspan="2">Mai</th>
-                        <th colspan="2">Juin</th>
-                    </tr>
-                    <tr class="forecast-real">
-                        <td></td>
-
-                        <td>Forecast</td>
-                        <td>Réel</td>
-                        <td>Forecast</td>
-                        <td>Réel</td>
-                        <td>Forecast</td>
-                        <td>Réel</td>
-                        <td>Forecast</td>
-                        <td>Réel</td>
-                        <td>Forecast</td>
-                        <td>Réel</td>
-                        <td>Forecast</td>
-                        <td>Réel</td>
-                    </tr>
+                
+                <table id="financialTable">
                     <tr>
-                        <td class="text-bold">Ventes</td>
-
+                        <th>   @Locals["Month"]</th>
+                        <th>  @Locals["Revenue"]</th>
+                        <th>  @Locals["Expenses"]</th>
+                        <th>  @Locals["Profit"]</th>
                     </tr>
-                    <tr>
-                        <td class="text-normal">Coûts des produs vendus</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-normal"> Marge brute</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-bold">Frais d'exploitation</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-normal">Frais de R&D</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-normal">Frais de ventes</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-normal">Frais généraux et d'administration</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-bold">Total des frais d'exploitation</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-bold">Bénéfice</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-normal">Bénéfice avant impôts</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-normal">Impôts sur le revenu</td>
-
-                    </tr>
-                    <tr>
-                        <td class="text-bold">Bénéfice Net</td>
-
-                    </tr>
-
-
                 </table>
+
             </div>
         </div>
 
@@ -241,7 +133,7 @@
             }
             ],
             title: {
-                text: 'Rapport de dépenses pour les six premiers mois de 2023',
+                text: 'Rapport de bénéfice  pour les six premiers mois de 2023',
                 align: 'left',
                 offsetY: 25,
                 offsetX: 20
@@ -281,5 +173,34 @@
         chartLine.render();
 
 
+    </script>
+
+    <script>
+
+       
+        const financialData = [
+            { date: 1, revenue: 36000, expenses: 11000 },
+            { date: 2, revenue: 45000, expenses: 15000 },
+            { date: 3, revenue: 52000, expenses: 12000 },
+            { date: 4, revenue: 30000, expenses: 5000 },
+                    { date: 5, revenue: 40000, expenses: 3000 },
+                    { date: 6, revenue: 40000, expenses: 7000 }
+            // Add more data here
+        ];
+
+        const table = document.getElementById('financialTable');
+
+        financialData.forEach(data => {
+            const row = table.insertRow();
+            const dateCell = row.insertCell(0);
+            const revenueCell = row.insertCell(1);
+            const expensesCell = row.insertCell(2);
+            const profitCell = row.insertCell(3);
+
+            dateCell.textContent = data.date;
+            revenueCell.textContent = data.revenue;
+            expensesCell.textContent = data.expenses;
+            profitCell.textContent = data.revenue - data.expenses;
+        });
     </script>
 }

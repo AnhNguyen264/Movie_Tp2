@@ -391,7 +391,7 @@ footer::before {
   z-index: 0;
 }
 
-#menu-burger {
+#menu-burger, #menu-burger2, #menu-burger3 {
   flex-direction: column;
   position: absolute;
   right: 0;
