@@ -69,13 +69,12 @@
         <a class="btn btn-success" asp-controller="GestionEnfant" asp-action="Create">
             <i class="fa-solid fa-plus"></i>&nbsp;&nbsp;@Locals["Create"]
         </a>
-    </div>
+          
 
     <div class="movie_nouveau">
         <div class="row">
             @foreach (var item in Model.Resultat)
             {
-
                 <partial name="_EnfantPartiel" for="@item" />
             }
 

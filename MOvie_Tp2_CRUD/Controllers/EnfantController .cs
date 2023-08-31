@@ -42,20 +42,29 @@ namespace TP2.Controllers
             filtrer.Criteres = pCriteres;
             filtrer.Resultat = _baseDonnees.Enfants.ToList();
 
+            //List<Enfant> test = new List<Enfant>();
+            //int a = 0;
+
+            //if (!pCriteres.statut1)
+            //{
+            //    a = filtrer.Resultat.Where(x => x.IdParent != 1).Count();
+
+            //}
+
             //statut
             if (!pCriteres.statut1)
             {
-                filtrer.Resultat = filtrer.Resultat.Where(x => x.Parent.Id != 1).ToList(); 
+                filtrer.Resultat = filtrer.Resultat.Where(x => x.IdParent != 1).ToList(); 
 
             } 
             if (!pCriteres.statut2)
             {
-                filtrer.Resultat = filtrer.Resultat.Where(x => x.Parent.Id != 2).ToList();
+                filtrer.Resultat = filtrer.Resultat.Where(x => x.IdParent != 2).ToList();
 
             } 
             if (!pCriteres.statut3)
             {
-                filtrer.Resultat = filtrer.Resultat.Where(x => x.Parent.Id != 3).ToList();
+                filtrer.Resultat = filtrer.Resultat.Where(x => x.IdParent != 3).ToList();
 
             }
 
@@ -81,11 +90,15 @@ namespace TP2.Controllers
              filtrer.Resultat = filtrer.Resultat.Where(x => x.Date == pCriteres.selectAnnee).ToList(); 
             }
 
+
+            var listE = filtrer.Resultat.Count();
             //message
             if(filtrer.Resultat.Count == 0)
             {
                 return View("NonTrouve", "Le film demandé n'a pas été trouvé!");
             }
+
+
 
             return View( filtrer);
         }

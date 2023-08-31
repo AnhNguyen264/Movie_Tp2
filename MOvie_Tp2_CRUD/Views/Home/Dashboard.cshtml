@@ -13,169 +13,169 @@
 
     </style>
 }
-    <div class="main_body">
-        <div class="row">
-            <div class="col-2">
+<div class="main_body">
+    <div class="row">
+        <div class="col-2">
 
             <partial name="_navDashBoard" />
+        </div>
+
+        <div class="col-10">
+            <div class="header">
+
+                <div class="header-left">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-right">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <i class="fa-solid fa-user"></i>
+                </div>
             </div>
 
-            <div class="col-10">
-                <div class="header">
 
-                    <div class="header-left">
-
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="header-right">
-                        <i class="fa-solid fa-bell"></i>
-                        <i class="fa-regular fa-envelope"></i>
-
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                </div>
-
-
-                <div class="main_content">
+            <div class="main_content">
 
                 <div class="main-title">
                     <h2 class="font-weight-bold">@Locals["Dashboard"]</h2>
                 </div>
-                    <div class="trend">
+                <div class="trend">
                     <h3> @Locals["best-selling"]</h3>
 
-         
 
 
-                        <div class="image-slider">
-                            <div class="image-item">
-                                <div class="image">
-                                    <img src="~/Image/1.jpeg"
-                                         alt="" />
-                                </div>
-                                <h5 class="image-title">Spider </h5>
+
+                    <div class="image-slider">
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="~/Image/1.jpeg"
+                                     alt="" />
                             </div>
-                            <div class="image-item">
-                                <div class="image">
-                                    <img src="~/Image/2.jpeg"
-                                         alt="" />
-                                </div>
-                                <h5 class="image-title"></h5>
+                            <h5 class="image-title">Spider </h5>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="~/Image/2.jpeg"
+                                     alt="" />
                             </div>
-                            <div class="image-item">
-                                <div class="image">
-                                    <img src="~/Image/3.jpeg"
-                                         alt="" />
-                                </div>
+                            <h5 class="image-title"></h5>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="~/Image/3.jpeg"
+                                     alt="" />
+                            </div>
                             <h5 class="image-title">Little Mermaid</h5>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="~/Image/4.jpeg"
+                                     alt="" />
                             </div>
-                            <div class="image-item">
-                                <div class="image">
-                                    <img src="~/Image/4.jpeg"
-                                         alt="" />
-                                </div>
-                                <h5 class="image-title">Flash</h5>
+                            <h5 class="image-title">Flash</h5>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="~/Image/5.jpeg"
+                                     alt="" />
                             </div>
-                            <div class="image-item">
-                                <div class="image">
-                                    <img src="~/Image/5.jpeg"
-                                         alt="" />
-                                </div>
                             <h5 class="image-title">Spider</h5>
-                            </div>
-
-                        </div>
-
-                        <div class="arrow-down">
-                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
 
                     </div>
 
+                    <div class="arrow-down">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
 
-                    <div class="main-cards row">
+                </div>
 
-                        <div class="card col-2">
-                            <div class="card-inner">
+
+                <div class="main-cards row">
+
+                    <div class="card col-2">
+                        <div class="card-inner">
                             <p class="text-primary">@Locals["NbMovie"] </p>
-                                <span class=" text-blue"></span>
-                            </div>
-                            <div class="number_stati">
-
-                                <span class="numero text-primary font-weight-bold" data-val="249">
-                                    000
-                                </span>
-                            <span> @Locals["Films"]</span>
-                            </div>
+                            <span class=" text-blue"></span>
                         </div>
+                        <div class="number_stati">
 
-                        <div class="card col-2">
-                            <div class="card-inner">
+                            <span class="numero text-primary font-weight-bold" data-val="249">
+                                000
+                            </span>
+                            <span> @Locals["Films"]</span>
+                        </div>
+                    </div>
+
+                    <div class="card col-2">
+                        <div class="card-inner">
                             <p class="text-primary">@Locals["Revenue"]</p>
-                                <span class=" text-orange"></span>
-                            </div>
-                            <div class="number_stati">
-                                <span>+</span>
-                                <span class="numero text-primary font-weight-bold" data-val="56"> 000 </span>
-                                <span>000$</span>
-                            </div>
-
+                            <span class=" text-orange"></span>
+                        </div>
+                        <div class="number_stati">
+                            <span>+</span>
+                            <span class="numero text-primary font-weight-bold" data-val="56"> 000 </span>
+                            <span>000$</span>
                         </div>
 
-                        <div class="card col-2">
-                            <div class="card-inner">
+                    </div>
+
+                    <div class="card col-2">
+                        <div class="card-inner">
                             <p class="text-primary">@Locals["Cost"]</p>
-                                <span class=" text-green"></span>
-                            </div>
-
-                            <div class="number_stati">
-                                <span>+</span>
-                                <span class="numero text-primary font-weight-bold" data-val="38">000</span>
-
-                                <span>000$</span>
-                            </div>
+                            <span class=" text-green"></span>
                         </div>
 
-                        <div class="card col-2">
-                            <div class="card-inner">
-                            <p class="text-primary">@Locals["Sale"]</p>
-                                <span class=" text-red"></span>
-                            </div>
-                            <div class="number_stati">
+                        <div class="number_stati">
+                            <span>+</span>
+                            <span class="numero text-primary font-weight-bold" data-val="38">000</span>
 
-                                <span class="numero text-primary font-weight-bold" data-val="150">000 </span>
+                            <span>000$</span>
+                        </div>
+                    </div>
+
+                    <div class="card col-2">
+                        <div class="card-inner">
+                            <p class="text-primary">@Locals["Sale"]</p>
+                            <span class=" text-red"></span>
+                        </div>
+                        <div class="number_stati">
+
+                            <span class="numero text-primary font-weight-bold" data-val="150">000 </span>
                             <span> @Locals["Films"]</span>
 
-                            </div>
                         </div>
-
-
                     </div>
-
-                    <div class="charts row">
-
-                        <div class="charts-card col-5">
-                        <p class="chart-title"> @Locals["TotalSale"]</p>
-                            <div id="bar-chart"></div>
-                        </div>
-
-                        <div class="charts-card col-5">
-                        <p class="chart-title"> @Locals["CostsandRevenues"]</p>
-                            <div id="area-chart"></div>
-                        </div>
-
-                    </div>
-
 
 
                 </div>
 
+                <div class="charts row">
+
+                    <div class="charts-card col-5">
+                        <p class="chart-title"> @Locals["TotalSale"]</p>
+                        <div id="bar-chart"></div>
+                    </div>
+
+                    <div class="charts-card col-5">
+                        <p class="chart-title"> @Locals["CostsandRevenues"]</p>
+                        <div id="area-chart"></div>
+                    </div>
+
+                </div>
+
+
+
             </div>
+
         </div>
     </div>
+</div>
 
 
-                
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_script_dashboard");

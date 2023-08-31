@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Objectives>
+﻿@model List<Vendeur>
 
 @section style {
     @{
@@ -32,47 +32,34 @@
             </div>
 
             <div class="main_content">
-                <h2>Objectives de vendeur</h2>
+                <h2>Les Vendeurs</h2>
 
 
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Objective</th>
-                            <th>Films</th>
-                            <th>statu</th>
-                            <th>Vendeurs</th>
+                        
+                            <th>Nom de Vendeur</th>
+            
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Vente 1</td>
-                            <td>150</td>
-                            <td>Terminé</td>
-                            <td>Bon</td>
-                        </tr>
-                        <tr>
-                            <td>Vente 2</td>
-                            <td>150</td>
-                            <td>Terminé</td>
-                            <td>Bon</td>
-                        </tr>
-                        <tr>
-                            <td>Vente 3</td>
-                            <td>150</td>
-                            <td>Terminé</td>
-                            <td>Bon</td>
-                        </tr>
-                        <tr>
-                            <td>Vente 4</td>
-                            <td>150</td>
-                            <td>terTerminémine</td>
-                            <td>Bon</td>
-                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td width="30%">
+                                    <a class="" asp-controller="home" asp-action="DetailsVendeurs" asp-route-id="@item.Id">
+                                        @item.NomVendeur
+                                    </a>
+                                </td>
+
+                            </tr>
+                        }
                     </tbody>
 
 
-                   
+
                 </table>
 
 

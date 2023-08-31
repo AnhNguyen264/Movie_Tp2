@@ -1,4 +1,6 @@
-﻿@section style {
+﻿@model List<Objectives>
+
+@section style {
     @{
         await Html.RenderPartialAsync("_style_dashboard");
     }
@@ -10,6 +12,9 @@
 <div class="main_body">
     <div class="row">
         <div class="col-2">
+
+
+
 
             <partial name="_navDashBoard" />
 
@@ -32,188 +37,231 @@
 
 
             <div class="main_content">
-                <h2> Les Vendeurs</h2>
+                <h2> Les Objectives</h2>
 
 
-                <div id="menu_ipadID" onclick="openMenuBurger()" class="menu_ipad ">
-                    <div class="arrow-down-chef" ">
-                        <p>
-                            HongAnh Nguyen
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </p>
+                @*       <div id="menu_ipadID" onclick="openMenuBurger()" class="menu_ipad ">
+                <div class="arrow-down-chef" ">
+                <p>
+                HongAnh Nguyen
+                <i class="fa-solid fa-chevron-down"></i>
+                </p>
 
-                    </div>
+                </div>
                 </div>
                 <div id="menu-burger" style="display: none">
-                    <table style="width:100%">
-                        <tr>
-                            <th>Objectives</th>
-                            <th>Nb de films vendus</th>
-                            <th>Commentaires</th>
+                <table style="width:100%">
+                <tr>
+                <th>Objectives</th>
+                <th>Nb de films vendus</th>
+                <th>Commentaires</th>
 
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                    </table>
+                </tr>
+                <tr>
+                <td>Ventes Q1 </td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                </table>
                 </div>
 
                 <div id="menu_ipadID2" onclick="openMenuBurger2()" class="menu_ipad2 ">
-                    <div class="arrow-down-chef">
-                        <p>
-                            Minny Nguyen
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </p>
+                <div class="arrow-down-chef">
+                <p>
+                Minny Nguyen
+                <i class="fa-solid fa-chevron-down"></i>
+                </p>
 
-                    </div>
+                </div>
                 </div>
                 <div id="menu-burger2" style="display: none">
-                    <table style="width:100%">
-                        <tr>
-                            <th>Objectives</th>
-                            <th>Nb de films vendus</th>
-                            <th>Commentaires</th>
+                <table style="width:100%">
+                <tr>
+                <th>Objectives</th>
+                <th>Nb de films vendus</th>
+                <th>Commentaires</th>
 
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                    </table>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                </table>
                 </div>
 
                 <div id="menu_ipadID3" onclick="openMenuBurger3()" class="menu_ipad3 ">
-                    <div class="arrow-down-chef">
-                        <p>
-                            Apple Nguyen
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </p>
+                <div class="arrow-down-chef">
+                <p>
+                Apple Nguyen
+                <i class="fa-solid fa-chevron-down"></i>
+                </p>
 
-                    </div>
+                </div>
                 </div>
                 <div id="menu-burger3" style="display: none">
-                    <table style="width:100%">
-                        <tr>
-                            <th>Objectives</th>
-                            <th>Nb de films vendus</th>
-                            <th>Commentaires</th>
+                <table style="width:100%">
+                <tr>
+                <th>Objectives</th>
+                <th>Nb de films vendus</th>
+                <th>Commentaires</th>
 
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                        <tr>
-                            <td>Ventes Q1</td>
-                            <td>150</td>
-                            <td>Bon travail</td>
-                        </tr>
-                    </table>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                <tr>
+                <td>Ventes Q1</td>
+                <td>150</td>
+                <td>Bon travail</td>
+                </tr>
+                </table>
                 </div>
 
+                </div>*@
+
+
+
+                <table class="table table-bordered table-striped" style="width:100%">
+                    <thead class="bg-dark text-white">
+                        <tr>
+                            <th>
+                                Nom d'Objectives
+
+                            </th>
+                            <th>
+                                NbsFilmsVendus
+                            </th>
+                            <th>
+                                Commentaires
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td width="40%">
+                                    Cliquez pour voir les vendeurs <i class="fa-solid fa-arrow-down" style="color:black"></i>
+                                    <a class="btn btn-info" asp-controller="home" asp-action="DetailsObjects" asp-route-id="@item.Id">
+
+                                        <br>
+                                        @item.NomObjective
+                                    </a>
+                                </td>
+
+                                <td class="text-center text-dark">
+                                    <a class="">
+                                        @item.NbFimsVendus
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a class="">
+                                        @item.Commentaires
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
             </div>
-
-
-
         </div>
     </div>
-</div>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_script_dashboard");
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_script_dashboard");
+        }
+        <script>
+
+            let menuBurger = document.getElementById('menu-burger')
+            function openMenuBurger() {
+                if (menuBurger.style.display === 'none') {
+                    menuBurger.style.height = '0'
+                    menuBurger.style.display = 'flex'
+                    menuBurger.style.height = '164px'
+                    menuBurger.classList.add('burger-open')
+                    menuBurger.classList.remove('burger-closed')
+                    return
+                }
+                if (menuBurger.style.display === 'flex') {
+                    menuBurger.classList.add('burger-closed')
+                    menuBurger.classList.remove('burger-open')
+                    setTimeout(() => {
+                        menuBurger.style.display = 'none'
+                    }, 300)
+                    return
+                }
+            }
+
+
+            let menuBurger2 = document.getElementById('menu-burger2')
+            function openMenuBurger2() {
+                if (menuBurger2.style.display === 'none') {
+                    menuBurger2.style.height = '0'
+                    menuBurger2.style.display = 'flex'
+                    menuBurger2.style.height = '164px'
+                    menuBurger2.classList.add('burger-open')
+                    menuBurger2.classList.remove('burger-closed')
+                    return
+                }
+                if (menuBurger2.style.display === 'flex') {
+                    menuBurger2.classList.add('burger-closed')
+                    menuBurger2.classList.remove('burger-open')
+                    setTimeout(() => {
+                        menuBurger2.style.display = 'none'
+                    }, 300)
+                    return
+                }
+            }
+
+
+            let menuBurger3 = document.getElementById('menu-burger3')
+            function openMenuBurger3() {
+                if (menuBurger3.style.display === 'none') {
+                    menuBurger3.style.height = '0'
+                    menuBurger3.style.display = 'flex'
+                    menuBurger3.style.height = '164px'
+                    menuBurger3.classList.add('burger-open')
+                    menuBurger3.classList.remove('burger-closed')
+                    return
+                }
+                if (menuBurger3.style.display === 'flex') {
+                    menuBurger3.classList.add('burger-closed')
+                    menuBurger3.classList.remove('burger-open')
+                    setTimeout(() => {
+                        menuBurger3.style.display = 'none'
+                    }, 300)
+                    return
+                }
+            }
+        </script>
     }
-    <script>
-
-        let menuBurger = document.getElementById('menu-burger')
-        function openMenuBurger() {
-            if (menuBurger.style.display === 'none') {
-                menuBurger.style.height = '0'
-                menuBurger.style.display = 'flex'
-                menuBurger.style.height = '164px'
-                menuBurger.classList.add('burger-open')
-                menuBurger.classList.remove('burger-closed')
-                return
-            }
-            if (menuBurger.style.display === 'flex') {
-                menuBurger.classList.add('burger-closed')
-                menuBurger.classList.remove('burger-open')
-                setTimeout(() => {
-                    menuBurger.style.display = 'none'
-                }, 300)
-                return
-            }
-        }
-
-
-        let menuBurger2 = document.getElementById('menu-burger2')
-        function openMenuBurger2() {
-            if (menuBurger2.style.display === 'none') {
-                menuBurger2.style.height = '0'
-                menuBurger2.style.display = 'flex'
-                menuBurger2.style.height = '164px'
-                menuBurger2.classList.add('burger-open')
-                menuBurger2.classList.remove('burger-closed')
-                return
-            }
-            if (menuBurger2.style.display === 'flex') {
-                menuBurger2.classList.add('burger-closed')
-                menuBurger2.classList.remove('burger-open')
-                setTimeout(() => {
-                    menuBurger2.style.display = 'none'
-                }, 300)
-                return
-            }
-        }
-
-
-        let menuBurger3 = document.getElementById('menu-burger3')
-        function openMenuBurger3() {
-            if (menuBurger3.style.display === 'none') {
-                menuBurger3.style.height = '0'
-                menuBurger3.style.display = 'flex'
-                menuBurger3.style.height = '164px'
-                menuBurger3.classList.add('burger-open')
-                menuBurger3.classList.remove('burger-closed')
-                return
-            }
-            if (menuBurger3.style.display === 'flex') {
-                menuBurger3.classList.add('burger-closed')
-                menuBurger3.classList.remove('burger-open')
-                setTimeout(() => {
-                    menuBurger3.style.display = 'none'
-                }, 300)
-                return
-            }
-        }
-    </script>
-}
