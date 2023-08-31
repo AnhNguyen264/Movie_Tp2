@@ -11,7 +11,9 @@ namespace TP2.Models
         [Key]
         public int Id { get; set; }
         public string NomVendeur { get; set; }
+    
 
+        public int ObjectivesId { get; set; }
 
         [ValidateNever]
         public  ICollection<Objectives?> Objectives { get; set; }

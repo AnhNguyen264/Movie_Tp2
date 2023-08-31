@@ -41,21 +41,25 @@ namespace TP2.Models.Data
 
             builder.Entity<Vendeur>().HasData(
 
-             new Vendeur { Id = 1, NomVendeur = "VWilliam" },
-             new Vendeur {Id = 2, NomVendeur = "VLeo" },
-             new Vendeur {Id = 3, NomVendeur = "VLiam" },
-             new Vendeur {Id = 4, NomVendeur = "VThomas" },
-             new Vendeur {Id = 5, NomVendeur = "VLouis" },
-             new Vendeur {Id = 6, NomVendeur = "VArthur" }
+              new Vendeur { Id = 1, ObjectivesId = 1, NomVendeur = "VWilliam" },
+              new Vendeur { Id = 2, ObjectivesId = 1, NomVendeur = "VLeo" },
+              new Vendeur { Id = 3, ObjectivesId = 2, NomVendeur = "VLiam" },
+              new Vendeur { Id = 4, ObjectivesId = 3, NomVendeur = "VThomas" },
+              new Vendeur { Id = 5, ObjectivesId = 2, NomVendeur = "VLouis" },
+              new Vendeur { Id = 6, ObjectivesId = 3, NomVendeur = "VArthur" }
 
-           );
+
+            );
             builder.Entity<Objectives>().HasData(
 
-          new Objectives { Id = 1, NomObjective = "Ventes les films nouveaux " },
-          new Objectives { Id = 2, NomObjective = "Ventes les films à venir " },
-          new Objectives { Id = 3, NomObjective = "Ventes les films plus vus " }
+ new Objectives { Id = 1, VendeursId = 1, NomObjective = "Ventes les films nouveaux ", NbFimsVendus = 150, Commentaires = "Très bon" },
+ new Objectives { Id = 2, VendeursId = 2, NomObjective = "Ventes les films à venir ", NbFimsVendus = 100, Commentaires = "Très bon" },
+ new Objectives { Id = 3, VendeursId = 3, NomObjective = "Ventes les films plus vus ", NbFimsVendus = 120, Commentaires = "Très bon" },
+ new Objectives { Id = 4, VendeursId = 1, NomObjective = "Ventes les films Juillet ", NbFimsVendus = 180, Commentaires = "Très bon" },
+ new Objectives { Id = 5, VendeursId = 2, NomObjective = "Ventes les films Mai ", NbFimsVendus = 160, Commentaires = "Très bon" },
+ new Objectives { Id = 6, VendeursId = 3, NomObjective = "Ventes les films Juin ", NbFimsVendus = 200, Commentaires = "Très bon" }
 
-        );
+);
         }
 
     }
