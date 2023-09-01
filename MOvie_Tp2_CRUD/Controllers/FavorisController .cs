@@ -60,6 +60,7 @@ namespace TP2.Controllers
 
         [HttpPost]
 
+
         public IActionResult SuprrimeUnEnfant(int id)
         {
             List<int> enfants = HttpContext.Session.Get<List<int>>("enfants");
